@@ -35,15 +35,15 @@ const decideWinner = (a, b) => {
     (a === "🤚" && b === "🤚") ||
     (a === "✌️" && b === "✌️")
   ) {
-    /* 3a. */ return "?";
+    /* 3a. */ return "Nobody wins... Try again !";
   } else if (
     (a === "✊" && b === "✌️") ||
     (a === "🤚" && b === "✊") ||
     (a === "✌️" && b === "🤚")
   ) {
-    /* 3b. */ return "?";
+    /* 3b. */ return "Player 1 wins !";
   } else {
-    /* 3c. */ return "?";
+    /* 3c. */ return "Player 2 wins !";
   }
 };
 
@@ -60,7 +60,11 @@ const play = () => {
 /* --- EVENT LISTENERS --- */
 
 /* 2. */
-// Adding a click event listener on Let's Play button
+// Adding a click event listener on Let's Play button to enable the game
 playBtn.addEventListener("click", play);
 
+// Adding a click event listener on Let's Play button to change the color in the result area
+playBtn.addEventListener("click", (changeResultColor) => {
+  resultArea.style.color = "#E60F17";
+});
 /* ------------------------------- */
