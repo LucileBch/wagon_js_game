@@ -55,16 +55,20 @@ const play = () => {
   insertHTML(choice1, choice2, result);
 };
 
+// Function to change the font color of the result
+const changeResultColor = () => {
+  resultArea.style.color = "#E60F17";
+};
+
 /* ----------------------------------------------- */
 
 /* --- EVENT LISTENERS --- */
 
 /* 2. */
 // Adding a click event listener on Let's Play button to enable the game
-playBtn.addEventListener("click", play);
-
-// Adding a click event listener on Let's Play button to change the color in the result area
-playBtn.addEventListener("click", (changeResultColor) => {
-  resultArea.style.color = "#E60F17";
+playBtn.addEventListener("click", () => {
+  play();
+  changeResultColor();
 });
+
 /* ------------------------------- */
