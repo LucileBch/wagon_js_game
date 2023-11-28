@@ -60,5 +60,7 @@ const play = () => {
 /* --- EVENT LISTENERS --- */
 
 /* 2. */
+// Adding a click event listener on Let's Play button
+playBtn.addEventListener("click", play);
 
 /* ------------------------------- */
