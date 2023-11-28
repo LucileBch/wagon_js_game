@@ -12,7 +12,7 @@ const resultArea = document.getElementById("result-area");
 const playBtn = document.getElementById("play-btn");
 
 /* This will help check your results */
-console.log(player2, resultArea, playBtn);
+// console.log(player1, player2, resultArea, playBtn); -- control OK
 
 /* ----------------------------------------------- */
 
